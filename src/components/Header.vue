@@ -3,23 +3,47 @@ import { RouterLink } from 'vue-router'
 import { Button } from '@/components/ui/button'
 import { ref } from 'vue'
 import { useDark, useToggle } from '@vueuse/core'
+import GithubIcon from './icons/GithubIcon.vue'
+import LinkedinIcon from './icons/LinkedinIcon.vue'
+import SunIcon from './icons/SunIcon.vue'
+import MoonIcon from './icons/MoonIcon.vue'
+import { cn } from '@/lib/utils'
 
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
 </script>
 
 <template>
-  <div class="container py-8">
-    <header class="flex gap-4">
-      <RouterLink :to="{ name: 'home' }"> <Button>Home </Button> </RouterLink>
-      <Button @click="toggleDark()" variant="default">Dark mode </Button>
-      <button
-        class="bg-secondary text-primary-foreground border border-border px-4 py-2 rounded-lg"
-      >
-        Mon bouton
-      </button>
-    </header>
-  </div>
+  <header class="p-3 border-b items-center sticky top-0 backdrop-blur-sm">
+    <div class="container flex justify-between items-center">
+      <p class="text-lg font-semibold opacity-80">Jonathan Hachette</p>
+
+      <div class="flex gap-3">
+        <Button variant="outline" class="flex items-center p-3">
+          <a
+            href="https://github.com/Jonathan-Hachette"
+            class="text-accent-foreground border rounded-sm"
+          >
+            <GithubIcon :size="16" />
+          </a>
+        </Button>
+
+        <Button variant="outline" class="flex items-center p-3">
+          <a
+            href="www.linkedin.com/in/jonathan-hachette"
+            class="text-accent-foreground border rounded-sm"
+          >
+            <LinkedinIcon :size="16" />
+          </a>
+        </Button>
+
+        <Button @click="toggleDark()" variant="outline" class="flex items-center p-3 border-0">
+          <SunIcon v-if="isDark" class="text-foreground" />
+          <MoonIcon v-else class="text-foreground" />
+        </Button>
+      </div>
+    </div>
+  </header>
 </template>
 
 <style scoped></style>
