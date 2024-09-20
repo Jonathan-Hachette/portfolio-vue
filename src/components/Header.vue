@@ -1,13 +1,10 @@
 <script setup>
-import { RouterLink } from 'vue-router'
 import { Button } from '@/components/ui/button'
-import { ref } from 'vue'
 import { useDark, useToggle } from '@vueuse/core'
 import GithubIcon from './icons/GithubIcon.vue'
 import LinkedinIcon from './icons/LinkedinIcon.vue'
-import SunIcon from './icons/SunIcon.vue'
 import MoonIcon from './icons/MoonIcon.vue'
-import { cn } from '@/lib/utils'
+import SunIcon from './icons/SunIcon.vue'
 
 const isDark = useDark()
 const toggleDark = useToggle(isDark)

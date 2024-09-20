@@ -26,6 +26,15 @@ module.exports = {
       mono: ['var(--font-geist-mono)'],
       caption: ['var(--font-caption)']
     },
+    backgroundSize: {
+      auto: 'auto',
+      cover: 'cover',
+      contain: 'contain',
+      '50%': '50%',
+      '110%': '110%',
+      16: '4rem'
+    },
+
     extend: {
       colors: {
         border: 'hsl(var(--border))',
