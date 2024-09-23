@@ -2,7 +2,7 @@
   <svg
     :width="size"
     :height="size"
-    viewBox="0 0 256 361"
+    viewBox="0 0 256 221"
     version="1.1"
     preserveAspectRatio="xMidYMid"
   >
@@ -21,7 +21,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from 'vue'
+import { defineComponent, type PropType } from 'vue'
 
 export default defineComponent({
   name: 'VueIcon',

@@ -3,11 +3,15 @@ import Code from '../components/Code.vue'
 </script>
 
 <template>
-  <section className="flex-col max-md:flex-col items-start radius gap-4">
-    <div className="flex-[3] text-center flex flex-col gap-2">
-      <h2 className="font-caption text-5xl text-primary font-bold">Jonathan Hachette</h2>
-      <h3 className="text-3xl font-caption ">Recherche Stage / Alternance</h3>
-      <p class="font-caption">
+  <section class="flex-col max-md:flex-col items-start radius gap-4">
+    <div class="flex-[3] text-center flex flex-col gap-2">
+      <h2 class="font-caption text-5xl text-primary font-bold animate-fade-left animate-ease-out">
+        Jonathan Hachette
+      </h2>
+      <h3 class="text-3xl font-caption animate-fade-left animate-delay-100 animate-ease-out">
+        Recherche Stage / Alternance
+      </h3>
+      <p class="font-caption animate-fade-left animate-delay-200 animate-ease-out">
         En reconversion Développeur Web avec le
         <Code>
           <a
@@ -18,14 +22,13 @@ import Code from '../components/Code.vue'
         </Code>
       </p>
     </div>
-    <div className="flex flex-[2] justify-center">
+
+    <div class="flex flex-[2] justify-center animate-fade-left animate-delay-300 animate-ease-out">
       <img
         src="https://avatars.githubusercontent.com/u/127342727?v=4"
-        className=" h-auto max-w-xs rounded-full my-6 justify-center max-md:w-56"
+        class="h-auto max-w-xs rounded-full my-6 justify-center max-md:w-56"
         alt="Jonathan's picture"
       />
     </div>
   </section>
 </template>
-
-<style scoped></style>

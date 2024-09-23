@@ -1,4 +1,5 @@
 const animate = require('tailwindcss-animate')
+const animated = require('tailwindcss-animated')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -93,6 +94,16 @@ module.exports = {
         'collapsible-up': {
           from: { height: 'var(--radix-collapsible-content-height)' },
           to: { height: 0 }
+        },
+        'fade-left': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateX(2rem)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateX(0)'
+          }
         }
       },
       animation: {
@@ -100,8 +111,13 @@ module.exports = {
         'accordion-up': 'accordion-up 0.2s ease-out',
         'collapsible-down': 'collapsible-down 0.2s ease-in-out',
         'collapsible-up': 'collapsible-up 0.2s ease-in-out'
+      },
+
+      transitionDuration: {
+        300: '300ms', // durée d'animation de 300ms
+        500: '500ms' // durée d'animation de 500ms
       }
     }
   },
-  plugins: [animate]
+  plugins: [animate, animated]
 }
