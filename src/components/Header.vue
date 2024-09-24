@@ -11,7 +11,7 @@ const toggleDark = useToggle(isDark)
 </script>
 
 <template>
-  <header class="p-3 border-b items-center sticky top-0 backdrop-blur-sm z-50">
+  <header class="py-3 border-b items-center sticky top-0 backdrop-blur-sm z-50">
     <div class="container flex justify-between items-center">
       <p class="text-lg font-semibold opacity-80">Jonathan Hachette</p>
 

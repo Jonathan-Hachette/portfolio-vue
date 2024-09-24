@@ -13,12 +13,8 @@ import Code from '../components/Code.vue'
       </h3>
       <p class="font-caption animate-fade-left animate-delay-200 animate-ease-out">
         En reconversion Développeur Web avec le
-        <Code>
-          <a
-            href="https://www.lereacteur.io/formation-alternance/concepteur-developpeur-applications/"
-          >
-            Reacteur
-          </a>
+        <Code class="text-base">
+          <a href="https://www.lereacteur.io/"> Reacteur </a>
         </Code>
       </p>
     </div>

@@ -1,6 +1,6 @@
 <script setup>
-import { Separator } from 'radix-vue'
-import { defineProps } from 'vue'
+// import { Separator } from 'radix-vue'
+import Separator from '@/components/ui/separator/Separator.vue'
 
 // Receive the current project's stack via props
 const props = defineProps({
@@ -39,18 +39,14 @@ const getIconComponent = (stack) => {
 <template>
   <div class="flex justify-center items-center flex-1">
     <!-- v-for to get all stack passed in prop -->
-    <div v-for="(stack, index) in stack" :key="stack" class="flex items-center">
+    <div v-for="(stack, index) in stack" :key="stack" class="flex justify-center items-center">
       <component
         :is="getIconComponent(stack)"
         :size="36"
         :style="stack === 'js' ? { transform: 'translateY(8px)' } : {}"
       />
-      <Separator
-        v-if="index < stack.length - 1"
-        class="bg-popover-foreground data-[orientation=vertical]:h-8 data-[orientation=vertical]:w-px data-[orientation=vertical]:mt-1 mx-[15px]"
-        decorative
-        orientation="vertical"
-      />
+
+      <Separator v-if="index < props.stack.length - 1" orientation="vertical" class="mx-[10px]" />
     </div>
   </div>
 </template>

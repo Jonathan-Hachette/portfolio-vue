@@ -1,10 +1,30 @@
 <script setup>
 import Header from '../src/components/Header.vue'
+import Hero from './components/Hero.vue'
+import ArrowDownCircle from './components/icons/ArrowDownCircle.vue'
+import Navigation from './components/Navigation.vue'
+import Spacing from './components/Spacing.vue'
+
+const scrollToProjects = () => {
+  const element = document.getElementById('content')
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+}
 </script>
 
 <template>
   <Header />
-  <main class="container py-8">
+
+  <main class="py-8">
+    <Hero />
+
+    <ArrowDownCircle :size="36" class="cursor-pointer animate-bouce" @click="scrollToProjects" />
+
+    <Spacing size="xl" />
+
+    <Navigation id="content" />
+
     <RouterView />
   </main>
 </template>

@@ -11,7 +11,7 @@ const props = defineProps({
 
 // Calcul de la classe CSS combinée
 const computedClass = computed(() => [
-  'bg-accent/30 border border-accent hover:bg-accent/50 transition-colors p-1 font-mono rounded-sm',
+  'bg-background border border-input font-bold hover:bg-accent hover:text-accent-foreground transition-colors p-1 font-mono text-sm shadow-sm rounded-sm',
   props.className
 ])
 </script>
