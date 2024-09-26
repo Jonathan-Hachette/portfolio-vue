@@ -33,7 +33,41 @@ const projects = [
     stack: ['vue', 'strapi', 'stripe', 'postgres']
   }
 ]
+
+const stack = [
+  {
+    iconMap: 'js',
+    title: 'Javascript',
+    description: 'Mon langage de programmation principal.'
+  },
+  {
+    iconMap: 'vue',
+    title: 'Vue',
+    description: 'Mon framework préféré.'
+  },
+  {
+    iconMap: 'html5',
+    title: 'HTML',
+    description: 'Mon langage de programmation principal.'
+  },
+  {
+    iconMap: 'css3',
+    title: 'CSS',
+    description: 'Mon langage de programmation principal.'
+  },
+  {
+    iconMap: 'tailwind',
+    title: 'Tailwindcss',
+    description: 'Mon framework préféré.'
+  },
+
+  {
+    iconMap: 'strapi',
+    title: 'Strapi',
+    description: 'Gestion et customisation des routes du CRUD.'
+  }
+]
 // Provider
-app.provide('GlobalStore', { projects: projects })
+app.provide('GlobalStore', { projects: projects, stack: stack })
 
 app.mount('#app')

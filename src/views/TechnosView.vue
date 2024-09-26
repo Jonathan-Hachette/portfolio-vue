@@ -1,27 +1,38 @@
 <script setup>
+import { inject } from 'vue'
+
+const GlobalStore = inject('GlobalStore')
+
 import Spacing from '@/components/Spacing.vue'
+import StackIcon from '@/components/StackIcon.vue'
 import { Separator } from '@/components/ui/separator'
 </script>
 
 <template>
   <section class="container">
-    <div class="flex flex-col gap-10 border rounded-[--radius] py-6">
-      <div class="p-8">
-        <div class="flex justify-between">
-          <div class="w-4/5">
-            <h2
-              class="font-caption text-5xl text-primary font-bold animate-fade-left animate-ease-out mb-2"
-            >
-              Mes Technos
-            </h2>
+    <!-- Div du bloc avec bordur -->
+    <div class="flex flex-col gap-10 border rounded-[--radius] px-8 py-14">
+      <div>
+        <h2
+          class="font-caption text-4xl text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-ease-in-out mb-2"
+        >
+          Mes Technos
+        </h2>
+        <Separator class="w-2/3" />
 
-            <Separator class="w-2/3" />
-            <Spacing size="xs" />
+        <Spacing size="xs" />
 
-            <div class="w-full">
-              <p class="animate-fade-left animate-ease-out animate-delay-500">
-                HTML CSS Js Vue TailwindCss Strapi
-              </p>
+        <div class="grid grid-cols-3 grid-rows-2 gap-y-6">
+          <div
+            class="grid grid-cols-1 grid-rows-2 auto-rows-fr"
+            v-for="(stack, index) in GlobalStore.stack"
+            :key="index"
+          >
+            <StackIcon class="animate-fade-left animate-delay-500" :stack="stack" />
+
+            <div class="animate-fade-left animate-delay-[800ms]">
+              <h2 class="text-lg font-semibold mb-2">{{ stack.title }}</h2>
+              <p class="text-sm text-muted-foreground">{{ stack.description }}</p>
             </div>
           </div>
         </div>

@@ -5,8 +5,10 @@ import Separator from '@/components/ui/separator/Separator.vue'
 // Receive the current project's stack via props
 const props = defineProps({
   stack: {
-    type: Array,
-    required: true
+    type: Array
+  },
+  stack: {
+    type: Object
   }
 })
 
@@ -17,6 +19,7 @@ import JsIcon from './icons/JsIcon.vue'
 import PostgresIcon from './icons/PostgresIcon.vue'
 import StrapiIcon from './icons/StrapiIcon.vue'
 import StripeIcon from './icons/StripeIcon.vue'
+import TailwindIcon from './icons/TailwindIcon.vue'
 import VueIcon from './icons/VueIcon.vue'
 
 // Icons map
@@ -27,7 +30,8 @@ const iconMap = {
   vue: VueIcon,
   strapi: StrapiIcon,
   stripe: StripeIcon,
-  postgres: PostgresIcon
+  postgres: PostgresIcon,
+  tailwind: TailwindIcon
 }
 
 // function to get the correspondant component from the stack in the object projects defined in main.ts
@@ -37,7 +41,7 @@ const getIconComponent = (stack) => {
 </script>
 
 <template>
-  <div class="flex justify-center items-center flex-1">
+  <div class="flex items-center flex-1">
     <!-- v-for to get all stack passed in prop -->
     <div v-for="(stack, index) in stack" :key="stack" class="flex justify-center items-center">
       <component
