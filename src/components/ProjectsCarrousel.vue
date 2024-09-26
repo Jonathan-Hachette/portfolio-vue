@@ -34,14 +34,14 @@ const isDark = useDark()
 
 <template>
   <section class="container">
-    <div class="gap-10 border rounded-[--radius] py-6">
-      <div class="p-8 flex flex-col">
+    <div class="gap-10 border rounded-[--radius] px-8 py-14">
+      <div class="flex flex-col">
         <h2
           class="font-caption text-4xl text-primary font-bold animate-fade-left animate-ease-out mb-2 w-3/4"
         >
           Mes Projets
         </h2>
-        <Separator class="w-2/3" />
+        <Separator class="w-3/4" />
         <Spacing size="xs" />
         <!-- Project sreenshot carousel entire Structure -->
         <Carousel

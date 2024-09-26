@@ -10,17 +10,19 @@ import { Separator } from '@/components/ui/separator'
 
 <template>
   <section class="container">
-    <!-- Div du bloc avec bordur -->
+    <!-- Div du bloc avec bordure -->
     <div class="flex flex-col gap-10 border rounded-[--radius] px-8 py-14">
       <div>
-        <h2
-          class="font-caption text-4xl text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-ease-in-out mb-2"
-        >
-          Mes Technos
-        </h2>
-        <Separator class="w-2/3" />
+        <div class="w-3/4">
+          <h2
+            class="font-caption text-4xl text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-ease-in-out mb-2"
+          >
+            Mes Technos
+          </h2>
+          <Separator class="w-full mt-2" />
 
-        <Spacing size="xs" />
+          <Spacing size="xs" />
+        </div>
 
         <div class="grid grid-cols-3 grid-rows-2 gap-y-6">
           <div
