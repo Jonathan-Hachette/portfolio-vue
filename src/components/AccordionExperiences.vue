@@ -42,6 +42,13 @@ const experiencesDetails = [
 </script>
 
 <template>
+  <div>
+    <h4
+      class="font-caption text-2xl text-primary font-bold mt-20 mb-4 animate-fade-left animate-duration-[1000ms] animate-delay-[300ms] animate-ease-in-out"
+    >
+      Expériences professionnelles
+    </h4>
+  </div>
   <Accordion type="single" collapsible>
     <AccordionItem
       class="flex flex-col gap-2"

@@ -30,11 +30,18 @@ import { Separator } from '@/components/ui/separator'
             v-for="(stack, index) in GlobalStore.stack"
             :key="index"
           >
-            <StackIcon class="animate-fade-left animate-delay-500" :stack="stack" />
+            <StackIcon
+              class="animate-fade-left animate-duration-[1000ms] animate-delay-500"
+              :stack="stack"
+            />
 
-            <div class="animate-fade-left animate-delay-[800ms]">
-              <h2 class="text-lg font-semibold mb-2">{{ stack.title }}</h2>
-              <p class="text-sm text-muted-foreground">{{ stack.description }}</p>
+            <div>
+              <h2 class="animate-fade-left animate-delay-[1000ms] text-lg font-semibold mb-2">
+                {{ stack.title }}
+              </h2>
+              <p class="animate-fade-left animate-delay-[1200ms] text-sm text-muted-foreground">
+                {{ stack.description }}
+              </p>
             </div>
           </div>
         </div>

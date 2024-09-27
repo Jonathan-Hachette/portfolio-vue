@@ -67,6 +67,13 @@ const projectsDetails = [
 </script>
 
 <template>
+  <div>
+    <h3
+      class="font-caption text-2xl text-primary font-bold mb-6 animate-fade-left animate-duration-[1000ms] animate-delay-[300ms] animate-ease-in-out"
+    >
+      Réalisations en Développement Web
+    </h3>
+  </div>
   <Accordion type="single" collapsible>
     <AccordionItem
       class="flex flex-col gap-2"
@@ -77,7 +84,11 @@ const projectsDetails = [
       <AccordionTrigger
         class="font-caption text-lg text-primary animate-fade-left animate-duration-[1000ms] animate-delay-[600ms] animate-ease-in-out"
       >
-        {{ project.title }}
+        <h4
+          class="font-caption text-lg text-primary animate-fade-left animate-duration-[1000ms] animate-delay-[600ms] animate-ease-in-out"
+        >
+          {{ project.title }}
+        </h4>
       </AccordionTrigger>
 
       <AccordionContent>
@@ -86,7 +97,7 @@ const projectsDetails = [
           <span
             class="text-muted-foreground"
             v-for="techno in project.content.technos"
-            :key="technos"
+            :key="techno"
           >
             {{ techno }}
           </span>

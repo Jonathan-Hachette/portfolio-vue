@@ -48,17 +48,6 @@ import { RouterLink } from 'vue-router'
       Mon CV
     </RouterLink>
 
-    <RouterLink
-      :to="{ name: 'test' }"
-      class="px-4"
-      :class="{
-        'text-[var(--primary-foreground)]': $route.name === 'test',
-        'text-muted-foreground': $route.name !== 'test'
-      }"
-    >
-      Test
-    </RouterLink>
-
     <!-- Penser à toujours utiliser la syntaxe 
      :class="{
         'text-[var(--primary-foreground)]': $route.name === 'resume',
