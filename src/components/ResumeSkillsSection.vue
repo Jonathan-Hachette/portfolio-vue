@@ -1,11 +1,7 @@
 <script setup>
 // Heroincons import
-import {
-  DevicePhoneMobileIcon,
-  EnvelopeIcon,
-  GlobeAltIcon,
-  MapPinIcon
-} from '@heroicons/vue/24/outline'
+import { DevicePhoneMobileIcon, GlobeAltIcon, MapPinIcon } from '@heroicons/vue/24/outline'
+import EmailDialog from './EmailDialog.vue'
 </script>
 
 <template>
@@ -26,18 +22,13 @@ import {
         <DevicePhoneMobileIcon class="size-6" />
         <a
           href="tel:+33614773065"
-          class="text-muted-foreground transition hover:text-primary hover:underline hover:-translate-y-1 hover:scale-110 duration-500"
+          class="text-muted-foreground transition hover:text-primary hover:underline hover:-translate-y-1 hover:scale-110 duration-500 animate-fade-left animate-duration-[1000ms] animate-ease-in-out animate-delay-[1000ms]"
           >+33 6 14 77 30 65</a
         >
       </div>
-      <div class="flex gap-3">
-        <EnvelopeIcon class="size-6" />
-        <p
-          class="text-muted-foreground transition hover:text-primary hover:underline hover:-translate-y-1 hover:scale-105 duration-500"
-        >
-          Solution mailing + dialog box
-        </p>
-      </div>
+
+      <EmailDialog />
+
       <div class="flex gap-2">
         <MapPinIcon class="size-6" />
         <p
@@ -46,6 +37,7 @@ import {
           Lieu
         </p>
       </div>
+
       <div class="flex gap-2">
         <GlobeAltIcon class="size-6" />
         <p
