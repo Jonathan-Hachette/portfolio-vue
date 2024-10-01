@@ -44,7 +44,7 @@ const experiencesDetails = [
 <template>
   <div>
     <h4
-      class="font-caption text-xl lg:text-2xl text-primary font-bold mt-10 lg:mt-20 mb-4 animate-fade-left animate-duration-[1000ms] animate-delay-[300ms] animate-ease-in-out"
+      class="font-caption text-lg lg:text-2xl text-primary font-bold mt-10 lg:mt-20 mb-4 animate-fade-left animate-duration-[1000ms] animate-delay-[300ms] animate-ease-in-out"
     >
       Expériences professionnelles
     </h4>

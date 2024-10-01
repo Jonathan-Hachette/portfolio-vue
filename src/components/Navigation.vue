@@ -1,4 +1,5 @@
 <script setup>
+// RouterLink import
 import { RouterLink } from 'vue-router'
 </script>
 

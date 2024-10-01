@@ -1,11 +1,15 @@
 <script setup>
+// UI components import
 import { Button } from '@/components/ui/button'
-import { useDark, useToggle } from '@vueuse/core'
+
+//Custom icons imports
 import GithubIcon from './icons/GithubIcon.vue'
 import LinkedinIcon from './icons/LinkedinIcon.vue'
 import MoonIcon from './icons/MoonIcon.vue'
 import SunIcon from './icons/SunIcon.vue'
 
+//  Dark mode management
+import { useDark, useToggle } from '@vueuse/core'
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
 </script>

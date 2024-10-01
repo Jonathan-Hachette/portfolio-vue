@@ -25,7 +25,12 @@ const scrollToProjects = () => {
     <Spacing size="md" />
 
     <Navigation id="content" />
-    <RouterView />
+
+    <div class="container">
+      <section class="gap-10 border rounded-[--radius] px-6 py-8 lg:p-12">
+        <RouterView />
+      </section>
+    </div>
   </main>
 </template>
 

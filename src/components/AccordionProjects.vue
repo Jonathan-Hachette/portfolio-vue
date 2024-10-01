@@ -69,7 +69,7 @@ const projectsDetails = [
 <template>
   <div>
     <h3
-      class="font-caption text-xl lg:text-2xl text-primary font-bold mb-6 animate-fade-left animate-duration-[1000ms] animate-delay-[300ms] animate-ease-in-out"
+      class="font-caption text-lg lg:text-2xl text-primary font-bold mb-6 animate-fade-left animate-duration-[1000ms] animate-delay-[300ms] animate-ease-in-out"
     >
       Réalisations en Développement Web
     </h3>
@@ -97,18 +97,21 @@ const projectsDetails = [
             {{ techno }}
           </span>
         </p>
+
         <p class="animate-fade animate-duration-[2000ms]">
           Description:
           <span class="text-muted-foreground">{{ project.content.description }}</span>
         </p>
+
         <p class="animate-fade animate-duration-[2000ms]">Acquis :</p>
 
         <ul class="animate-fade animate-duration-[2000ms]">
-          <div class="flex gap-2" v-for="skill in project.content.acquis">
+          <div class="flex gap-2" v-for="acquis in project.content.acquis">
             <CheckIcon class="size-4" />
-            <li>{{ skill }}</li>
+            <li class="flex-1">{{ acquis }}</li>
           </div>
         </ul>
+
         <div class="mt-8 flex flex-start gap-8">
           <Button
             v-if="project.title !== 'Clone Leboncoin - Backend'"
