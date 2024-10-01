@@ -30,7 +30,7 @@ import imageSrc from '@/assets/imgs/IMG_1644.jpg'
         <Separator class="w-ful" />
         <Spacing size="sm" />
 
-        <div class="w-full text-base leading-7 font-geist-sans">
+        <div class="w-full text-sm leading-7 font-geist-sans">
           <p
             class="animate-fade-left animate-ease-in-out animate-delay-500 animate-duration-[1000ms]"
           >
@@ -75,14 +75,14 @@ import imageSrc from '@/assets/imgs/IMG_1644.jpg'
             class="animate-fade-left animate-ease-out animate-delay-[1400ms] animate-duration-[1000ms]"
           >
             J'ai acquis de solides compétences en
-            <Code>HTML <Html5Icon :size="Number(20)" class="inline relative bottom-0.5" /></Code>,
-            <Code>CSS <Css3Icon :size="Number(24)" class="inline relative bottom-0.5" /></Code> et
-            <Code>Javascript <JsIcon :size="Number(20)" class="inline relative top-0.5" /> </Code>
+            <Code>HTML<Html5Icon :size="Number(20)" class="inline relative bottom-0.5" /></Code>,
+            <Code>CSS<Css3Icon :size="Number(24)" class="inline relative bottom-0.5" /></Code> et
+            <Code>Javascript<JsIcon :size="Number(20)" class="inline relative top-0.5" /> </Code>
             pour le front. J'utilise
-            <Code>Vue.js <VueIcon :size="Number(20)" class="inline" /></Code> comme framework
+            <Code>Vue.js<VueIcon :size="Number(20)" class="inline" /></Code> comme framework
             préférenciel. J'ai aussi réalisé du back avec
-            <Code>Strapi <StrapiNoText :size="Number(18)" class="inline" /></Code>, intégré une
-            méthode paiement avec <Code>Stripe</Code>.
+            <Code>Strapi<StrapiNoText :size="Number(18)" class="inline" /></Code>, intégré une
+            méthode paiement avec<Code>Stripe</Code>.
           </p>
           <br />
           <p
