@@ -34,7 +34,7 @@ const isDark = useDark()
 
 <template>
   <section class="container">
-    <div class="gap-10 border rounded-[--radius] px-6 py-8 lg:px-8 lg:py-14">
+    <div class="gap-10 border rounded-[--radius] px-6 py-8 lg:px-8 lg:py-10">
       <div class="flex flex-col">
         <h2
           class="font-caption text-xl md:text-2xl lg:text-4xl text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-ease-in-out mb-2 w-3/4"

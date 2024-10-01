@@ -13,7 +13,7 @@ import Separator from '@/components/ui/separator/Separator.vue'
   <main class="container">
     <!-- Div du bloc avec bordure -->
     <div class="flex flex-col bg-card gap-10 border rounded-[--radius] px-8 py-14">
-      <div class="w-3/4">
+      <div class="w-full lg:w-3/4">
         <h2
           class="font-caption text-xl md:text-2xl lg:text-4xl text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-ease-in-out"
         >
