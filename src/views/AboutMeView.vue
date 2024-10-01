@@ -25,14 +25,14 @@ import imageSrc from '@/assets/imgs/IMG_1644.jpg'
       <div class="flex justify-between">
         <div class="w-full">
           <h2
-            class="font-caption text-4xl text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-ease-in-out mb-2 w-full"
+            class="font-caption text-xl md:text-2xl lg:text-4xl text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-ease-in-out mb-2 w-full"
           >
             Mon Histoire
           </h2>
           <Separator class="w-ful" />
           <Spacing size="xs" />
 
-          <div class="w-full leading-7 font-geist-sans">
+          <div class="w-full text-base leading-7 font-geist-sans">
             <p
               class="animate-fade-left animate-ease-in-out animate-delay-500 animate-duration-[1000ms]"
             >
@@ -107,11 +107,11 @@ import imageSrc from '@/assets/imgs/IMG_1644.jpg'
         </div>
 
         <div
-          class="flex justify-center w-1/3 animate-fade-left animate-ease-in-out animate-duration-[1000ms]"
+          class="hidden lg:flex justify-center w-1/3 animate-fade-left animate-ease-in-out animate-duration-[1000ms]"
         >
           <img
             :src="imageSrc"
-            class="opacity-75 overflow-hidden object-cover w-48 h-48 max-w-xs rounded-full justify-center max-md:w-56"
+            class="opacity-75 overflow-hidden object-cover lg:w-48 lg:h-48 max-w-xs rounded-full justify-center max-md:w-56"
             alt="Mon Histoire"
           />
         </div>

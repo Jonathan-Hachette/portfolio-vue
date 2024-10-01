@@ -3,10 +3,11 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <nav class="container flex items-center mb-4">
+  <nav
+    class="container flex justify-between items-center mb-4 text-xs sm:text-lg md:text-md lg:text-xl"
+  >
     <RouterLink
       :to="{ name: 'home' }"
-      class="px-4"
       :class="{
         'text-[var(--primary-foreground)]': $route.name === 'home',
         'text-muted-foreground': $route.name !== 'home'
@@ -17,7 +18,7 @@ import { RouterLink } from 'vue-router'
 
     <RouterLink
       :to="{ name: 'aboutMe' }"
-      class="px-4"
+      class=""
       :class="{
         'text-[var(--primary-foreground)]': $route.name === 'aboutMe',
         'text-muted-foreground': $route.name !== 'aboutMe'
@@ -28,7 +29,7 @@ import { RouterLink } from 'vue-router'
 
     <RouterLink
       :to="{ name: 'technos' }"
-      class="px-4"
+      class=""
       :class="{
         'text-[var(--primary-foreground)]': $route.name === 'technos',
         'text-muted-foreground': $route.name !== 'technos'
@@ -39,7 +40,7 @@ import { RouterLink } from 'vue-router'
 
     <RouterLink
       :to="{ name: 'resume' }"
-      class="px-4"
+      class=""
       :class="{
         'text-[var(--primary-foreground)]': $route.name === 'resume',
         'text-muted-foreground': $route.name !== 'resume'

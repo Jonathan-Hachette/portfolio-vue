@@ -15,7 +15,7 @@ import { Separator } from '@/components/ui/separator'
       <div>
         <div class="w-3/4">
           <h2
-            class="font-caption text-4xl text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-ease-in-out mb-2"
+            class="font-caption text-xl md:text-2xl lg:text-4xl text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-ease-in-out mb-2"
           >
             Mes Technos
           </h2>
@@ -24,14 +24,16 @@ import { Separator } from '@/components/ui/separator'
           <Spacing size="xs" />
         </div>
 
-        <div class="grid grid-cols-3 grid-rows-2 gap-y-6">
+        <div
+          class="grid grid-cols-1 text-center md:text-left md:grid-cols-2 lg:text-left lg:grid-cols-3 gap-y-6"
+        >
           <div
             class="grid grid-cols-1 grid-rows-2 auto-rows-fr"
             v-for="(stack, index) in GlobalStore.stack"
             :key="index"
           >
             <StackIcon
-              class="animate-fade-left animate-duration-[1000ms] animate-delay-500"
+              class="flex justify-center md:justify-start lg:justify-start animate-fade-left animate-duration-[1000ms] animate-delay-500"
               :stack="stack"
             />
 

@@ -5,19 +5,13 @@ import EmailDialog from './EmailDialog.vue'
 </script>
 
 <template>
-  <h3
-    class="font-caption text-2xl text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-delay-[300ms] animate-ease-in-out"
-  >
-    Profil et Compétences
-  </h3>
-
   <div>
     <h4
-      class="font-caption text-lg text-primary font-bold mb-4 animate-fade-left animate-duration-[1000ms] animate-delay-[600ms] animate-ease-in-out"
+      class="font-caption text-lg text-primary font-bold mb-2 lg:mb-4 animate-fade-left animate-duration-[1000ms] animate-delay-[600ms] animate-ease-in-out"
     >
       Contact
     </h4>
-    <address class="flex flex-col gap-4">
+    <address class="flex flex-col gap-2 text-sm">
       <div class="flex gap-3">
         <DevicePhoneMobileIcon class="size-6" />
         <a
@@ -29,7 +23,7 @@ import EmailDialog from './EmailDialog.vue'
 
       <EmailDialog />
 
-      <div class="flex gap-2">
+      <div class="flex gap-4 text-sm">
         <MapPinIcon class="size-6" />
         <p
           class="text-muted-foreground cursor-pointer transition hover:text-primary hover:underline hover:-translate-y-1 hover:scale-105 duration-500"
@@ -38,7 +32,7 @@ import EmailDialog from './EmailDialog.vue'
         </p>
       </div>
 
-      <div class="flex gap-2">
+      <div class="flex gap-4 text-sm">
         <GlobeAltIcon class="size-6" />
         <p
           class="text-muted-foreground cursor-pointer transition hover:text-primary hover:underline hover:-translate-y-1 hover:scale-105 duration-500"
@@ -49,9 +43,9 @@ import EmailDialog from './EmailDialog.vue'
     </address>
   </div>
 
-  <div>
+  <div class="text-sm">
     <h4
-      class="font-caption text-lg text-primary font-bold mb-4 animate-fade-left animate-duration-[1000ms] animate-delay-[600ms] animate-ease-in-out"
+      class="font-caption text-lg text-primary font-bold mb-2 lg:mb-4 animate-fade-left animate-duration-[1000ms] animate-delay-[600ms] animate-ease-in-out"
     >
       Skills
     </h4>
@@ -63,9 +57,9 @@ import EmailDialog from './EmailDialog.vue'
     <p class="text-muted-foreground">Git / Github</p>
   </div>
 
-  <div>
+  <div class="text-sm">
     <h4
-      class="font-caption text-lg text-primary font-bold mb-4 animate-fade-left animate-duration-[1000ms] animate-delay-[600ms] animate-ease-in-out"
+      class="font-caption text-lg text-primary font-bold mb-2 lg:mb-4 animate-fade-left animate-duration-[1000ms] animate-delay-[600ms] animate-ease-in-out"
     >
       Soft Skills
     </h4>
@@ -76,9 +70,9 @@ import EmailDialog from './EmailDialog.vue'
     <p class="text-muted-foreground">Orienté Solutions</p>
   </div>
 
-  <div>
+  <div class="text-sm">
     <h4
-      class="font-caption text-lg text-primary font-bold mb-4 animate-fade-left animate-duration-[1000ms] animate-delay-[600ms] animate-ease-in-out"
+      class="font-caption text-lg text-primary font-bold mb-2 lg:mb-4 animate-fade-left animate-duration-[1000ms] animate-delay-[600ms] animate-ease-in-out"
     >
       Interêts
     </h4>

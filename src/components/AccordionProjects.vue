@@ -69,29 +69,24 @@ const projectsDetails = [
 <template>
   <div>
     <h3
-      class="font-caption text-2xl text-primary font-bold mb-6 animate-fade-left animate-duration-[1000ms] animate-delay-[300ms] animate-ease-in-out"
+      class="font-caption text-xl lg:text-2xl text-primary font-bold mb-6 animate-fade-left animate-duration-[1000ms] animate-delay-[300ms] animate-ease-in-out"
     >
       Réalisations en Développement Web
     </h3>
   </div>
   <Accordion type="single" collapsible>
-    <AccordionItem
-      class="flex flex-col gap-2"
-      v-for="project in projectsDetails"
-      :key="project.value"
-      :value="project.value"
-    >
+    <AccordionItem v-for="project in projectsDetails" :key="project.value" :value="project.value">
       <AccordionTrigger
-        class="font-caption text-lg text-primary animate-fade-left animate-duration-[1000ms] animate-delay-[600ms] animate-ease-in-out"
+        class="animate-fade-left animate-duration-[1000ms] animate-delay-[600ms] animate-ease-in-out"
       >
         <h4
-          class="font-caption text-lg text-primary animate-fade-left animate-duration-[1000ms] animate-delay-[600ms] animate-ease-in-out"
+          class="font-caption text-sm md:text-lg lg:text-lg text-primary animate-fade-left animate-duration-[1000ms] animate-delay-[600ms] animate-ease-in-out"
         >
           {{ project.title }}
         </h4>
       </AccordionTrigger>
 
-      <AccordionContent>
+      <AccordionContent class="flex flex-col gap-6 text-xs md:text-sm lg:text-sm">
         <p class="animate-fade animate-duration-[2000ms]">
           Technos :
           <span
@@ -110,7 +105,7 @@ const projectsDetails = [
 
         <ul class="animate-fade animate-duration-[2000ms]">
           <div class="flex gap-2" v-for="skill in project.content.acquis">
-            <CheckIcon class="size-5" />
+            <CheckIcon class="size-4" />
             <li>{{ skill }}</li>
           </div>
         </ul>

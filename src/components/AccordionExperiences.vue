@@ -44,7 +44,7 @@ const experiencesDetails = [
 <template>
   <div>
     <h4
-      class="font-caption text-2xl text-primary font-bold mt-20 mb-4 animate-fade-left animate-duration-[1000ms] animate-delay-[300ms] animate-ease-in-out"
+      class="font-caption text-xl lg:text-2xl text-primary font-bold mt-10 lg:mt-20 mb-4 animate-fade-left animate-duration-[1000ms] animate-delay-[300ms] animate-ease-in-out"
     >
       Expériences professionnelles
     </h4>
@@ -59,12 +59,12 @@ const experiencesDetails = [
       <AccordionTrigger
         class="animate-fade-left animate-duration-[1000ms] animate-delay-[600ms] animate-ease-in-out"
       >
-        <h4 class="font-caption text-lg text-primary">
+        <h4 class="font-caption text-left text-sm md:text-lg lg:text-lg text-primary">
           {{ experience.position }} - {{ experience.title }}
         </h4>
       </AccordionTrigger>
 
-      <AccordionContent>
+      <AccordionContent class="text-xs md:text-sm lg:text-sm">
         <p class="animate-fade animate-duration-[2000ms] mb-4">
           {{ experience.date }}
         </p>

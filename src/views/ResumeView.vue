@@ -15,7 +15,7 @@ import Separator from '@/components/ui/separator/Separator.vue'
     <div class="flex flex-col bg-card gap-10 border rounded-[--radius] px-8 py-14">
       <div class="w-3/4">
         <h2
-          class="font-caption text-4xl text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-ease-in-out"
+          class="font-caption text-xl md:text-2xl lg:text-4xl text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-ease-in-out"
         >
           Alternance / Stage Développeur Web Frontend
         </h2>
@@ -23,9 +23,9 @@ import Separator from '@/components/ui/separator/Separator.vue'
         <Spacing size="xs" />
       </div>
 
-      <div class="flex gap-20">
+      <div class="grid grid-cols-1 gap-10 lg:flex lg:text-left lg:gap-20">
         <!-- Accorion Section -->
-        <section class="w-3/5">
+        <section class="w-full lg:w-3/5">
           <!-- Project Accordion -->
           <AccordionProjects />
 
@@ -34,7 +34,12 @@ import Separator from '@/components/ui/separator/Separator.vue'
           <AccordionExperiences />
         </section>
 
-        <section class="flex flex-col gap-10">
+        <h3
+          class="font-caption text-xl lg:text-2xl text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-delay-[300ms] animate-ease-in-out"
+        >
+          Profil et Compétences
+        </h3>
+        <section class="flex flex-col items-start gap-10 md:grid md:grid-cols-2">
           <ResumeSkillsSection />
         </section>
       </div>

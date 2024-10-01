@@ -5,13 +5,17 @@ import Code from '../components/Code.vue'
 <template>
   <section class="flex-col max-md:flex-col items-start radius gap-4">
     <div class="flex-[3] text-center flex flex-col gap-2">
-      <h2 class="font-caption text-5xl text-primary font-bold animate-fade-left animate-ease-out">
+      <h2
+        class="text-2xl md:text-3xl lg:text-5xl text-primary font-caption font-bold animate-fade-left animate-ease-out"
+      >
         Jonathan Hachette
       </h2>
-      <h3 class="text-3xl font-caption animate-fade-left animate-delay-100 animate-ease-out">
+      <h3
+        class="text-xl md:text-2xl lg:text-3xl font-caption animate-fade-left animate-delay-100 animate-ease-out"
+      >
         Recherche Stage / Alternance
       </h3>
-      <p class="font-caption animate-fade-left animate-delay-200 animate-ease-out">
+      <p class="text-base font-caption animate-fade-left animate-delay-200 animate-ease-out">
         En reconversion Développeur Web avec le
         <Code class="text-base">
           <a href="https://www.lereacteur.io/"> Reacteur </a>

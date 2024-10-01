@@ -34,10 +34,10 @@ const isDark = useDark()
 
 <template>
   <section class="container">
-    <div class="gap-10 border rounded-[--radius] px-8 py-14">
+    <div class="gap-10 border rounded-[--radius] px-6 py-8 lg:px-8 lg:py-14">
       <div class="flex flex-col">
         <h2
-          class="font-caption text-4xl text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-ease-in-out mb-2 w-3/4"
+          class="font-caption text-xl md:text-2xl lg:text-4xl text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-ease-in-out mb-2 w-3/4"
         >
           Mes Projets
         </h2>
@@ -46,12 +46,17 @@ const isDark = useDark()
         <!-- Project sreenshot carousel entire Structure -->
         <Carousel
           v-slot="{ canScrollNext }"
-          class="relative w-full max-w-md animate-fade-left animate-delay-100 place-self-center"
+          class="relative w-64 lg:w-full max-w-md animate-fade-left animate-delay-100 place-self-center"
         >
           <CarouselContent>
             <!-- One div for every project -->
             <CarouselItem v-for="(project, index) in GlobalStore.projects" :key="index">
               <div class="py-2">
+                <a :href="project.url" target="_blank">
+                  <span class="flex justify-center text-xl lg:text-3xl font-semibold mb-4">{{
+                    project.title
+                  }}</span>
+                </a>
                 <!-- Popup appearing -->
                 <HoverCard>
                   <!-- Element that triggers the popup on hover -->
@@ -63,25 +68,20 @@ const isDark = useDark()
                       }"
                     >
                       <!-- Dark mode image  -->
+
                       <CardContent
                         v-if="isDark"
-                        class="flex aspect-square justify-center p-6 bg-center bg-[length:448px_280px] bg-no-repeat hover:animate-pulse hover:first-letter:animate-duration-2000"
+                        class="flex aspect-square justify-center p-6 bg-center bg-contain md:bg-contain lg:bg-[length:448px_280px] bg-no-repeat hover:animate-pulse hover:first-letter:animate-duration-2000"
                         :style="{ backgroundImage: `url(${project.screenshotDark})` }"
                       >
-                        <a :href="project.url" target="_blank">
-                          <span class="text-3xl font-semibold">{{ project.title }}</span>
-                        </a>
                       </CardContent>
 
                       <!-- Light Mode image -->
                       <CardContent
                         v-else
-                        class="flex aspect-square justify-center p-6 bg-center bg-[length:450px_260px] bg-no-repeat"
+                        class="flex aspect-square justify-center p-6 bg-center bg-cover lg:bg-[length:448px_280px] bg-no-repeat"
                         :style="{ backgroundImage: `url(${project.screenshotLight})` }"
                       >
-                        <a :href="project.url" target="_blank">
-                          <span class="text-3xl font-semibold">{{ project.title }}</span>
-                        </a>
                       </CardContent>
                     </Card>
                   </HoverCardTrigger>
