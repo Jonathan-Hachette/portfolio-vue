@@ -62,7 +62,7 @@ const stack = [
   },
 
   {
-    iconMap: 'strapi',
+    iconMap: 'StrapiNoText',
     title: 'Strapi',
     description: 'Gestion et customisation des routes du CRUD.'
   }

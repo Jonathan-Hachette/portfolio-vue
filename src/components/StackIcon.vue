@@ -21,6 +21,7 @@ import StrapiIcon from './icons/StrapiIcon.vue'
 import StripeIcon from './icons/StripeIcon.vue'
 import TailwindIcon from './icons/TailwindIcon.vue'
 import VueIcon from './icons/VueIcon.vue'
+import StrapiNoText from './icons/StrapiNoText.vue'
 
 // Icons map
 const iconMap = {
@@ -29,6 +30,7 @@ const iconMap = {
   js: JsIcon,
   vue: VueIcon,
   strapi: StrapiIcon,
+  StrapiNoText: StrapiNoText,
   stripe: StripeIcon,
   postgres: PostgresIcon,
   tailwind: TailwindIcon

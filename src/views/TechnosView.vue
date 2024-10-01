@@ -25,7 +25,7 @@ import { Separator } from '@/components/ui/separator'
         </div>
 
         <div
-          class="grid grid-cols-1 text-center md:text-left md:grid-cols-2 lg:text-left lg:grid-cols-3 gap-y-6"
+          class="grid grid-cols-1 text-center md:text-left md:grid-cols-2 lg:text-left lg:grid-cols-3 gap-y-6 md:gap-x-8"
         >
           <div
             class="grid grid-cols-1 grid-rows-2 auto-rows-fr"
