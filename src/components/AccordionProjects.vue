@@ -3,7 +3,7 @@ import Spacing from '@/components/Spacing.vue'
 import Button from '@/components/ui/button/Button.vue'
 import Separator from '@/components/ui/separator/Separator.vue'
 
-//Icon import
+// Icon import
 import GithubIcon from '@/components/icons/GithubIcon.vue'
 import { CheckIcon } from '@heroicons/vue/16/solid'
 
@@ -39,7 +39,7 @@ const projectsDetails = [
     content: {
       technos: ['Vue.js'],
       description:
-        "Développement de l'interface utilisateur d'un site similaire à Leboncoin, avec affichage, création et suppressions d'annonces, navigation par catégories et recherche dynamique, création et consultation de compte utilisateur.",
+        "Développement de l'interface utilisateur d'un site similaire à Leboncoin, avec affichage, création et suppression d'annonces, navigation par catégories et recherche dynamique, création et consultation de compte utilisateur.",
       acquis: [
         'Utilisation de Vue.js pour la gestion de composants et la manipulation du DOM.',
         "Intégration de routes dynamiques et gestion d'état avec Vue Router.",
@@ -53,7 +53,7 @@ const projectsDetails = [
     value: 'item-3',
     title: 'Clone Leboncoin - Backend',
     content: {
-      technos: ['Strapi, PostgresSQL'],
+      technos: ['Strapi, PostgreSQL'],
       description:
         'Développement du backend pour gérer les annonces et les utilisateurs, avec Strapi comme CMS et PostgreSQL pour la base de données.',
       acquis: [

@@ -16,7 +16,7 @@ const props = defineProps({
 import Css3Icon from './icons/Css3Icon.vue'
 import Html5Icon from './icons/Html5Icon.vue'
 import JsIcon from './icons/JsIcon.vue'
-import PostgresIcon from './icons/PostgresIcon.vue'
+import PostgreIcon from '../icons/PostgreIcon.vue'
 import StrapiIcon from './icons/StrapiIcon.vue'
 import StripeIcon from './icons/StripeIcon.vue'
 import TailwindIcon from './icons/TailwindIcon.vue'
@@ -32,7 +32,7 @@ const iconMap = {
   strapi: StrapiIcon,
   StrapiNoText: StrapiNoText,
   stripe: StripeIcon,
-  postgres: PostgresIcon,
+  postgre: PostgreIcon,
   tailwind: TailwindIcon
 }
 

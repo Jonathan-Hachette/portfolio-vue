@@ -31,7 +31,7 @@ const subject = ref('')
 const message = ref('')
 const accepted = ref(false)
 const isSending = ref(false)
-const succes = ref(false)
+const success = ref(false)
 const errorMessage = ref('')
 const formSubmitted = ref(false)
 const acceptanceRequired = ref('')
@@ -65,7 +65,7 @@ const sendEmail = () => {
           console.log('SUCCESS!', response.status, response.text)
           // To trigger conditionnal display next to button
           isSending.value = false
-          succes.value = true
+          success.value = true
         },
         (error) => {
           console.log('FAILED...', error)
@@ -97,28 +97,28 @@ const acceptance = () => {
 
 <template>
   <Dialog>
-    <!-- Element that triggers DialogBox  -->
+    <!-- Élément qui déclenche la boîte de dialogue -->
     <DialogTrigger class="flex gap-4 text-sm cursor-pointer">
       <EnvelopeIcon
         class="text-primary size-6 animate-fade-left animate-duration-[1000ms] animate-ease-in-out animate-delay-[600ms]"
       />
       <p
-        class="text-muted-foreground cursor-pointer transition hover:text-primary hover:underline hover:-translate-y-1 hover:scale-105 duration-500 animate-fade-left animate-duration-[1000ms] animate-ease-in-out animate-delay-[1000ms]"
+        class="text-muted-foreground cursor-pointer transition hover:text-primary hover:underline animate-fade-left animate-duration-[1000ms] animate-ease-in-out animate-delay-[1000ms]"
       >
         jonathan.hachette@gmail.com
       </p>
     </DialogTrigger>
 
-    <!-- // Content of the DialogBox -->
+    <!-- Contenu de la boîte de dialogue -->
     <DialogContent class="sm:max-w-[425px]">
       <DialogHeader>
         <DialogTitle>Écrivez-moi</DialogTitle>
         <DialogDescription>
-          Laissez moi un message et je vous répondrai dès que possible.
+          Laissez-moi un message et je vous répondrai dès que possible.
         </DialogDescription>
       </DialogHeader>
 
-      <!-- From to get data to generate email -->
+      <!-- Formulaire pour saisir les informations du mail -->
       <form class="grid gap-4 py-4">
         <div class="grid grid-cols-4 items-center gap-4">
           <Label for="name" class="text-right">Votre nom</Label>
@@ -198,7 +198,7 @@ const acceptance = () => {
 
             <div>
               <p v-if="errorMessage" class="text-destructive text-xs">{{ errorMessage }}</p>
-              <p v-if="succes" class="text-muted-foreground">Email envoyé avec succès!</p>
+              <p v-if="success" class="text-muted-foreground">Email envoyé avec succès !</p>
             </div>
           </div>
         </div>

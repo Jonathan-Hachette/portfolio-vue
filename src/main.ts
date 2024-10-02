@@ -30,7 +30,7 @@ const projects = [
     screenshotDark: screenshotDarkSimiliboncoin,
     screenshotLight: screenshotLightSimiliboncoin,
     url: 'https://similiboncoin.netlify.app/',
-    stack: ['vue', 'strapi', 'stripe', 'postgres']
+    stack: ['vue', 'strapi', 'stripe', 'postgre']
   }
 ]
 

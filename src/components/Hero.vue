@@ -18,7 +18,7 @@ import Code from '../components/Code.vue'
       <p class="text-base font-caption animate-fade-left animate-delay-200 animate-ease-out">
         En reconversion Développeur Web avec le
         <Code class="text-base">
-          <a href="https://www.lereacteur.io/"> Reacteur </a>
+          <a href="https://www.lereacteur.io/" target="_blank"> Reacteur </a>
         </Code>
       </p>
     </div>

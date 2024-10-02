@@ -2,9 +2,9 @@
 import Spacing from '@/components/Spacing.vue'
 import Separator from '@/components/ui/separator/Separator.vue'
 
-//Icon import
+// Import des icônes
 
-// Accordion import
+// Import de l'Accordion
 import {
   Accordion,
   AccordionContent,
@@ -12,7 +12,7 @@ import {
   AccordionTrigger
 } from '@/components/ui/accordion'
 
-// Experiences
+// Expériences
 
 const experiencesDetails = [
   {
@@ -27,7 +27,7 @@ const experiencesDetails = [
     value: 'item-4',
     date: '2020 - 2023',
     position: 'Responsable rayon alcools',
-    title: 'Intermarché Hyper la Teste',
+    title: 'Intermarché Hyper La Teste',
     description:
       'Management d’équipe, gestion de l’approvisionnement, veille concurrentielle et merchandising.'
   },
@@ -69,7 +69,7 @@ const experiencesDetails = [
           {{ experience.date }}
         </p>
         <p class="animate-fade animate-duration-[2000ms]">
-          Description:
+          Description :
           <span class="text-muted-foreground">{{ experience.description }}</span>
         </p>
       </AccordionContent>
