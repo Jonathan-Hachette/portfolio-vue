@@ -22,6 +22,7 @@ const toggleDark = useToggle(isDark)
       <div class="flex gap-3">
         <Button variant="outline" class="flex items-center p-3">
           <a
+            target="_blank"
             href="https://github.com/Jonathan-Hachette"
             class="text-accent-foreground border rounded-sm"
           >
@@ -31,7 +32,8 @@ const toggleDark = useToggle(isDark)
 
         <Button variant="outline" class="flex items-center p-3">
           <a
-            href="www.linkedin.com/in/jonathan-hachette"
+            target="_blank"
+            href="https://www.linkedin.com/in/jonathan-hachette"
             class="text-accent-foreground border rounded-sm"
           >
             <LinkedinIcon :size="16" />
