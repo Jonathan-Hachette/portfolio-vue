@@ -101,7 +101,9 @@ import imageSrc from '@/assets/imgs/IMG_1644.jpg'
             apprendre davantage sur ma vision en tant que développeur web.
           </p>
           <br />
-          <p>
+          <p
+            class="animate-fade-left animate-ease-out animate-delay-[2300ms] animate-duration-[1000ms]"
+          >
             J'espère avoir l'occasion d'échanger avec vous et de partager cette aventure
             passionnante.
           </p>
