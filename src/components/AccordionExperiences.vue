@@ -2,9 +2,7 @@
 import Spacing from '@/components/Spacing.vue'
 import Separator from '@/components/ui/separator/Separator.vue'
 
-// Import des icônes
-
-// Import de l'Accordion
+// Accordion import
 import {
   Accordion,
   AccordionContent,
@@ -12,8 +10,7 @@ import {
   AccordionTrigger
 } from '@/components/ui/accordion'
 
-// Expériences
-
+// Experiences
 const experiencesDetails = [
   {
     value: 'item-3',
@@ -42,39 +39,40 @@ const experiencesDetails = [
 </script>
 
 <template>
-  <div>
+  <section>
     <h4
       class="font-caption text-lg lg:text-2xl text-primary font-bold mt-10 lg:mt-20 mb-4 animate-fade-left animate-duration-[1000ms] animate-delay-[300ms] animate-ease-in-out"
     >
       Expériences professionnelles
     </h4>
-  </div>
-  <Accordion type="single" collapsible>
-    <AccordionItem
-      class="flex flex-col gap-2"
-      v-for="experience in experiencesDetails"
-      :key="experience.value"
-      :value="experience.value"
-    >
-      <AccordionTrigger
-        class="animate-fade-left animate-duration-[1000ms] animate-delay-[600ms] animate-ease-in-out"
-      >
-        <h4 class="font-caption text-left text-sm md:text-lg lg:text-lg text-primary">
-          {{ experience.position }} - {{ experience.title }}
-        </h4>
-      </AccordionTrigger>
 
-      <AccordionContent class="text-xs md:text-sm lg:text-sm">
-        <p class="animate-fade animate-duration-[2000ms] mb-4">
-          {{ experience.date }}
-        </p>
-        <p class="animate-fade animate-duration-[2000ms]">
-          Description :
-          <span class="text-muted-foreground">{{ experience.description }}</span>
-        </p>
-      </AccordionContent>
-      <Separator />
-      <Spacing size="xs" />
-    </AccordionItem>
-  </Accordion>
+    <Accordion type="single" collapsible>
+      <AccordionItem
+        class="flex flex-col gap-2"
+        v-for="experience in experiencesDetails"
+        :key="experience.value"
+        :value="experience.value"
+      >
+        <AccordionTrigger
+          class="animate-fade-left animate-duration-[1000ms] animate-delay-[600ms] animate-ease-in-out"
+        >
+          <h4 class="font-caption text-left text-sm md:text-lg lg:text-lg text-primary">
+            {{ experience.position }} - {{ experience.title }}
+          </h4>
+        </AccordionTrigger>
+
+        <AccordionContent class="text-xs md:text-sm lg:text-sm">
+          <p class="animate-fade animate-duration-[2000ms] mb-4">
+            {{ experience.date }}
+          </p>
+          <p class="animate-fade animate-duration-[2000ms]">
+            Description :
+            <span class="text-muted-foreground">{{ experience.description }}</span>
+          </p>
+        </AccordionContent>
+        <Separator />
+        <Spacing size="xs" />
+      </AccordionItem>
+    </Accordion>
+  </section>
 </template>

@@ -21,7 +21,6 @@ const scrollToProjects = () => {
 
     <ArrowDownCircle :size="36" class="cursor-pointer animate-bouce" @click="scrollToProjects" />
 
-    <div></div>
     <Spacing size="md" />
 
     <Navigation id="content" />

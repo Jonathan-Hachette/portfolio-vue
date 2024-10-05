@@ -17,7 +17,8 @@ import screenshotLightSimiliboncoin from '@/assets/imgs/similiboncoin-mockup-whi
 const projects = [
   {
     title: 'Margaux Naturopathe',
-    description: 'Site statique pour une practicienne de santé.',
+    description:
+      'Premier site vitrine statique réalisé pour une praticienne en naturopathie, avec une attention particulière portée à la simplicité du design et à l’accessibilité du contenu.',
     screenshotDark: screenshotDarkMargaux,
     screenshotLight: screenshotLightMargaux,
     url: 'https://margaux-naturopathebordeaux.com/',
@@ -26,7 +27,8 @@ const projects = [
 
   {
     title: 'Similiboncoin',
-    description: 'Replique du site leboncoin en fullstack.',
+    description:
+      'Réplique complète du site Leboncoin en fullstack, intégrant une API backend avec Strapi, des paiements via Stripe, et une base de données PostgreSQL.',
     screenshotDark: screenshotDarkSimiliboncoin,
     screenshotLight: screenshotLightSimiliboncoin,
     url: 'https://similiboncoin.netlify.app/',
@@ -37,34 +39,36 @@ const projects = [
 const stack = [
   {
     iconMap: 'js',
-    title: 'Javascript',
+    title: 'JavaScript',
     description: 'Mon langage de programmation principal.'
   },
   {
     iconMap: 'vue',
     title: 'Vue',
-    description: 'Mon framework préféré.'
+    description:
+      'Mon framework front préféré pour construire des interfaces dynamiques et réactives.'
   },
   {
     iconMap: 'html5',
     title: 'HTML',
-    description: 'Mon langage de programmation principal.'
+    description: 'Le langage de balisage qui structure mes applications web.'
   },
   {
     iconMap: 'css3',
     title: 'CSS',
-    description: 'Mon langage de programmation principal.'
+    description: 'Le langage de style qui façonne mes interfaces web.'
   },
   {
     iconMap: 'tailwind',
-    title: 'Tailwindcss',
-    description: 'Mon framework préféré.'
+    title: 'Tailwind CSS',
+    description:
+      'Un framework CSS utilitaire qui me permet de concevoir des interfaces rapidement et efficacement.'
   },
 
   {
     iconMap: 'StrapiNoText',
     title: 'Strapi',
-    description: 'Gestion et customisation des routes du CRUD.'
+    description: 'Mon outil CMS headless prévilégié pour plus de flexibilité'
   }
 ]
 // Provider

@@ -1,5 +1,5 @@
 <script setup>
-// This component is the email line in Contact -> email, at click it will display a popup to generate an automatic email
+// This component displays the email line in Contact -> clicking it will show a popup to generate an automatic email
 
 // Heroicons import
 import { EnvelopeIcon } from '@heroicons/vue/24/outline'

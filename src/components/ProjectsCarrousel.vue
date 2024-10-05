@@ -31,7 +31,7 @@ const isDark = useDark()
 
 <template>
   <main>
-    <div class="flex flex-col">
+    <section class="flex flex-col">
       <h2
         class="font-caption text-xl md:text-2xl lg:text-4xl text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-ease-in-out mb-2 w-3/4"
       >
@@ -47,14 +47,12 @@ const isDark = useDark()
         class="relative w-64 lg:w-full max-w-md animate-fade-left animate-delay-100 place-self-center"
       >
         <CarouselContent>
-          <!-- One div for every project -->
+          <!-- One bloc for every project -->
           <CarouselItem v-for="(project, index) in GlobalStore.projects" :key="index">
             <div class="py-2">
-              <a :href="project.url" target="_blank">
-                <span class="flex justify-center text-xl lg:text-3xl font-semibold mb-4">{{
-                  project.title
-                }}</span>
-              </a>
+              <span class="flex justify-center text-xl lg:text-3xl font-semibold mb-4">{{
+                project.title
+              }}</span>
 
               <!-- Popup appearing -->
               <HoverCard>
@@ -67,20 +65,22 @@ const isDark = useDark()
                     }"
                   >
                     <!-- Dark mode image  -->
-                    <CardContent
-                      v-if="isDark"
-                      class="flex aspect-square justify-center p-6 bg-center bg-contain md:bg-contain lg:bg-[length:448px_280px] bg-no-repeat hover:animate-pulse hover:first-letter:animate-duration-2000"
-                      :style="{ backgroundImage: `url(${project.screenshotDark})` }"
-                    >
-                    </CardContent>
+                    <a :href="project.url" target="_blank" class="cursor-pointer">
+                      <CardContent
+                        v-if="isDark"
+                        class="flex aspect-square justify-center p-6 bg-center bg-contain md:bg-contain lg:bg-[length:448px_280px] bg-no-repeat hover:animate-pulse hover:first-letter:animate-duration-2000"
+                        :style="{ backgroundImage: `url(${project.screenshotDark})` }"
+                      >
+                      </CardContent>
 
-                    <!-- Light Mode image -->
-                    <CardContent
-                      v-else
-                      class="flex aspect-square justify-center p-6 bg-center bg-cover lg:bg-[length:448px_280px] bg-no-repeat"
-                      :style="{ backgroundImage: `url(${project.screenshotLight})` }"
-                    >
-                    </CardContent>
+                      <!-- Light Mode image -->
+                      <CardContent
+                        v-else
+                        class="flex aspect-square justify-center p-6 bg-center bg-cover lg:bg-[length:448px_280px] bg-no-repeat"
+                        :style="{ backgroundImage: `url(${project.screenshotLight})` }"
+                      >
+                      </CardContent>
+                    </a>
                   </Card>
                 </HoverCardTrigger>
 
@@ -108,6 +108,6 @@ const isDark = useDark()
         <CarouselPrevious />
         <CarouselNext v-if="canScrollNext" />
       </Carousel>
-    </div>
+    </section>
   </main>
 </template>
