@@ -39,17 +39,6 @@ import EmailDialog from './EmailDialog.vue'
           Bordeaux, Gironde
         </p>
       </div>
-
-      <div class="flex gap-4 text-sm">
-        <GlobeAltIcon
-          class="size-6 animate-fade-left animate-duration-[1000ms] animate-ease-in-out animate-delay-[600ms]"
-        />
-        <p
-          class="text-muted-foreground cursor-pointer transition hover:text-primary hover:underline hover:-translate-y-1 hover:scale-105 duration-500 animate-fade-left animate-duration-[1000ms] animate-ease-in-out animate-delay-[1000ms]"
-        >
-          Link ?
-        </p>
-      </div>
     </address>
   </main>
 
