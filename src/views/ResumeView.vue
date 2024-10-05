@@ -25,18 +25,8 @@ import Separator from '@/components/ui/separator/Separator.vue'
     <div class="grid grid-cols-1 gap-10 lg:flex lg:text-left lg:gap-20">
       <!-- Accorion Section -->
       <section class="w-full lg:w-3/5">
-        <h3
-          class="font-caption text-xl lg:text-2xl mb-4 text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-delay-[300ms] animate-ease-in-out"
-        >
-          Projets
-        </h3>
         <AccordionProjects />
 
-        <h3
-          class="font-caption text-xl lg:text-2xl mb-4 text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-delay-[300ms] animate-ease-in-out"
-        >
-          Expériences
-        </h3>
         <AccordionExperiences />
       </section>
 
