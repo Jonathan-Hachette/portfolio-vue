@@ -19,7 +19,6 @@ import { RouterLink } from 'vue-router'
 
     <RouterLink
       :to="{ name: 'aboutMe' }"
-      class=""
       :class="{
         'text-[var(--primary-foreground)]': $route.name === 'aboutMe',
         'text-muted-foreground': $route.name !== 'aboutMe'
@@ -30,7 +29,6 @@ import { RouterLink } from 'vue-router'
 
     <RouterLink
       :to="{ name: 'technos' }"
-      class=""
       :class="{
         'text-[var(--primary-foreground)]': $route.name === 'technos',
         'text-muted-foreground': $route.name !== 'technos'
@@ -41,7 +39,6 @@ import { RouterLink } from 'vue-router'
 
     <RouterLink
       :to="{ name: 'resume' }"
-      class=""
       :class="{
         'text-[var(--primary-foreground)]': $route.name === 'resume',
         'text-muted-foreground': $route.name !== 'resume'
@@ -50,12 +47,12 @@ import { RouterLink } from 'vue-router'
       Mon CV
     </RouterLink>
 
-    <!-- Penser à toujours utiliser la syntaxe 
+    <!-- Toujours utiliser la syntaxe :
      :class="{
-        'text-[var(--primary-foreground)]': $route.name === 'resume',
-        'text-muted-foreground': $route.name !== 'resume'
-      }"
-      Si une classe "classique" de couleur de texte est donnée elle prendra le dessus
-      -->
+       'text-[var(--primary-foreground)]': $route.name === 'resume',
+       'text-muted-foreground': $route.name !== 'resume'
+     }"
+     Si une classe CSS standard est donnée, elle prendra le dessus sur la classe dynamique.
+-->
   </nav>
 </template>

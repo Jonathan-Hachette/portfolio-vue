@@ -20,7 +20,7 @@ const toggleDark = useToggle(isDark)
       <p class="text-lg font-semibold opacity-80">Jonathan Hachette</p>
 
       <div class="flex gap-3">
-        <Button variant="outline" class="flex items-center p-3">
+        <Button variant="outline" class="flex items-center p-3 cursor-pointer">
           <a
             target="_blank"
             href="https://github.com/Jonathan-Hachette"
@@ -30,7 +30,7 @@ const toggleDark = useToggle(isDark)
           </a>
         </Button>
 
-        <Button variant="outline" class="flex items-center p-3">
+        <Button variant="outline" class="flex items-center p-3 cursor-pointer">
           <a
             target="_blank"
             href="https://www.linkedin.com/in/jonathan-hachette"
@@ -40,7 +40,11 @@ const toggleDark = useToggle(isDark)
           </a>
         </Button>
 
-        <Button @click="toggleDark()" variant="outline" class="flex items-center p-3 border-0">
+        <Button
+          @click="toggleDark()"
+          variant="outline"
+          class="flex items-center p-3 border-0 cursor-pointer"
+        >
           <SunIcon v-if="isDark" class="text-foreground" />
           <MoonIcon v-else class="text-foreground" />
         </Button>
