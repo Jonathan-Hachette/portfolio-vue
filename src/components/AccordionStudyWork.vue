@@ -93,7 +93,7 @@ const modulesDetails = [
         'Electron',
         'WebSockets'
       ],
-      duration: '2 semaines',
+
       skills: [
         'Test unitaires',
         'Sécurisation serveur',
@@ -110,7 +110,7 @@ const modulesDetails = [
 <template>
   <section>
     <h3
-      class="font-caption text-lg lg:text-2xl text-primary font-bold mb-6 animate-fade-left animate-duration-[1000ms] animate-delay-[300ms] animate-ease-in-out"
+      class="mb-6 font-bold font-caption text-lg text-primary lg:text-2xl animate-delay-[300ms] animate-ease-in-out animate-fade-left animate-duration-[1000ms]"
     >
       Programme
     </h3>
@@ -118,9 +118,9 @@ const modulesDetails = [
     <Accordion type="single" collapsible>
       <AccordionItem v-for="module in modulesDetails" :key="module.value" :value="module.value">
         <AccordionTrigger
-          class="animate-fade-left animate-duration-[1000ms] animate-delay-[600ms] animate-ease-in-out"
+          class="animate-delay-[600ms] animate-ease-in-out animate-fade-left animate-duration-[1000ms]"
         >
-          <h4 class="font-caption text-sm md:text-lg lg:text-lg text-primary">
+          <h4 class="font-caption text-primary text-sm md:text-lg lg:text-lg">
             {{ module.title }}
           </h4>
         </AccordionTrigger>
@@ -133,7 +133,7 @@ const modulesDetails = [
             </span>
           </p>
 
-          <p class="animate-fade animate-duration-[2000ms]">
+          <p v-if="module.content.duration" class="animate-fade animate-duration-[2000ms]">
             Durée :
             <span class="text-muted-foreground">{{ module.content.duration }}</span>
           </p>
