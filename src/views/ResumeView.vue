@@ -15,7 +15,7 @@ import Separator from '@/components/ui/separator/Separator.vue'
       <h2
         class="font-caption text-xl md:text-2xl lg:text-4xl text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-ease-in-out"
       >
-        Alternance / Stage Développeur Web Frontend
+        Alternance Développeur Web Frontend
       </h2>
 
       <Separator class="w-full mt-2" />

@@ -8,10 +8,20 @@ import { RouterLink } from 'vue-router'
     class="container flex justify-between items-center mb-4 text-xs sm:text-lg md:text-md lg:text-xl"
   >
     <RouterLink
-      :to="{ name: 'home' }"
+      :to="{ name: 'studywork' }"
       :class="{
-        'text-[var(--primary-foreground)]': $route.name === 'home',
-        'text-muted-foreground': $route.name !== 'home'
+        'text-[var(--primary-foreground)]': $route.name === 'studywork',
+        'text-muted-foreground': $route.name !== 'studywork'
+      }"
+    >
+      Alternance
+    </RouterLink>
+
+    <RouterLink
+      :to="{ name: 'projects' }"
+      :class="{
+        'text-[var(--primary-foreground)]': $route.name === 'projects',
+        'text-muted-foreground': $route.name !== 'projects'
       }"
     >
       Mes Projets

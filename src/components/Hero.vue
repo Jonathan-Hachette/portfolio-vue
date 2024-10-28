@@ -13,12 +13,24 @@ import Code from '../components/Code.vue'
       <h3
         class="text-xl md:text-2xl lg:text-3xl font-caption animate-fade-left animate-delay-100 animate-ease-out"
       >
-        Recherche Stage / Alternance
+        Recherche
+        <Code
+          class="text-xl md:text-2xl lg:text-2xl font-caption animate-fade-left animate-delay-100 animate-ease-out"
+        >
+          <RouterLink to="/#studywork">Alternance</RouterLink>
+        </Code>
+        Développeur Web Frontend
       </h3>
+
       <p class="text-base font-caption animate-fade-left animate-delay-200 animate-ease-out">
-        En reconversion Développeur Web avec le
+        En reconversion avec le
         <Code class="text-base">
-          <a href="https://www.lereacteur.io/" target="_blank"> Reacteur </a>
+          <a
+            href="https://www.lereacteur.io/formation-alternance/concepteur-developpeur-applications/"
+            target="_blank"
+          >
+            Reacteur
+          </a>
         </Code>
       </p>
     </div>
