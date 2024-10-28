@@ -45,7 +45,7 @@ import { Separator } from '@/components/ui/separator'
             <StackIcon
               :stack="stack"
               aria-label="Icône pour {{ stack.title }}"
-              class="flex justify-center"
+              class="flex justify-center lg:justify-start"
             />
           </figure>
 
