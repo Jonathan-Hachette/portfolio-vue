@@ -19,16 +19,16 @@ import { Separator } from '@/components/ui/separator'
       <header class="w-3/4">
         <h2
           id="technologies-section"
-          class="font-caption text-xl md:text-2xl lg:text-4xl text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-ease-in-out mb-2"
+          class="mb-2 font-bold font-caption text-primary text-xl md:text-2xl lg:text-4xl animate-ease-in-out animate-fade-left animate-duration-[1000ms]"
         >
           Mes Technos
         </h2>
-        <Separator class="w-full mt-2" />
+        <Separator class="mt-2 w-full" />
         <Spacing size="sm" />
       </header>
 
       <section
-        class="grid grid-cols-1 text-center md:text-left md:grid-cols-2 lg:text-left lg:grid-cols-3 gap-y-10 md:gap-x-8"
+        class="gap-y-10 md:gap-x-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center md:text-left lg:text-left"
         aria-labelledby="stack-list"
       >
         <h3 id="stack-list" class="sr-only">Liste des technologies</h3>
@@ -40,16 +40,20 @@ import { Separator } from '@/components/ui/separator'
           :key="index"
         >
           <figure
-            class="flex justify-center md:justify-start lg:justify-start animate-fade-left animate-duration-[1000ms] animate-delay-500"
+            class="flex justify-center md:justify-start lg:justify-start animate-delay-500 animate-fade-left animate-duration-[1000ms]"
           >
-            <StackIcon :stack="stack" aria-label="Icône pour {{ stack.title }}" />
+            <StackIcon
+              :stack="stack"
+              aria-label="Icône pour {{ stack.title }}"
+              class="flex justify-center"
+            />
           </figure>
 
           <div>
-            <h4 class="animate-fade-left animate-delay-[1000ms] text-lg font-semibold mb-2">
+            <h4 class="mb-2 font-semibold text-lg animate-delay-[1000ms] animate-fade-left">
               {{ stack.title }}
             </h4>
-            <p class="animate-fade-left animate-delay-[1200ms] text-sm text-muted-foreground">
+            <p class="text-muted-foreground text-sm animate-delay-[1200ms] animate-fade-left">
               {{ stack.description }}
             </p>
           </div>

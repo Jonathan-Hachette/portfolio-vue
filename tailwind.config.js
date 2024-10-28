@@ -1,6 +1,5 @@
 const animate = require('tailwindcss-animate')
 const animated = require('tailwindcss-animated')
-const filters = require('tailwindcss-filters')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -108,10 +107,10 @@ module.exports = {
       },
 
       transitionDuration: {
-        300: '300ms', // durée d'animation de 300ms
-        500: '500ms' // durée d'animation de 500ms
+        300: '300ms',
+        500: '500ms'
       }
     }
   },
-  plugins: [animate, animated, filters]
+  plugins: [animate, animated]
 }

@@ -15,7 +15,7 @@ import AccordionStudyWork from '@/components/AccordionStudyWork.vue'
     <div>
       <div class="w-3/4">
         <h2
-          class="font-caption text-xl md:text-2xl lg:text-4xl text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-ease-in-out mb-2 w-full"
+          class="mb-2 w-full font-bold font-caption text-primary text-xl md:text-2xl lg:text-4xl animate-ease-in-out animate-fade-left animate-duration-[1000ms]"
           id="studywork"
         >
           Alternance
@@ -25,20 +25,20 @@ import AccordionStudyWork from '@/components/AccordionStudyWork.vue'
 
       <Spacing size="sm" />
 
-      <div class="flex justify-between gap-14">
+      <div class="lg:flex lg:justify-between gap-14 grid grid-cols-1">
         <div class="flex-1">
           <AccordionStudyWork />
         </div>
 
-        <div>
+        <div class="row-start-1">
           <div>
             <h3
-              class="font-caption text-xl lg:text-2xl mb-2 text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-delay-[300ms] animate-ease-in-out"
+              class="mb-2 font-bold font-caption text-primary text-xl lg:text-2xl animate-delay-[300ms] animate-ease-in-out animate-fade-left animate-duration-[1000ms]"
             >
               Début de la formation
             </h3>
             <p
-              class="animate-fade-left animate-duration-[1000ms] animate-delay-[600ms] animate-ease-in-out"
+              class="animate-delay-[600ms] animate-ease-in-out animate-fade-left animate-duration-[1000ms]"
             >
               03 Février 2025
             </p>
@@ -47,12 +47,12 @@ import AccordionStudyWork from '@/components/AccordionStudyWork.vue'
           <Spacing size="sm" />
 
           <h3
-            class="font-caption text-xl lg:text-2xl mb-2 text-primary font-bold animate-fade-left animate-duration-[1000ms] animate-delay-[300ms] animate-ease-in-out"
+            class="mb-2 font-bold font-caption text-primary text-xl lg:text-2xl animate-delay-[300ms] animate-ease-in-out animate-fade-left animate-duration-[1000ms]"
           >
             Rythme
           </h3>
           <div
-            class="animate-fade-left animate-duration-[1000ms] animate-delay-[600ms] animate-ease-in-out"
+            class="animate-delay-[600ms] animate-ease-in-out animate-fade-left animate-duration-[1000ms]"
           >
             <p>10 semaines de Bootcamp intensif.</p>
             <p class="text-balance">Puis 3 semaines en entreprise, 1 semaine en formation.</p>
